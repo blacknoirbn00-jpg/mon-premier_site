@@ -1,5 +1,6 @@
 {
   "name": "gmail-phish-cloud",
+  "type": "module",
   "version": "1.0.0",
   "description": "Projet universitaire sur les vulnérabilités OAuth2",
   "main": "api/callback.js",
