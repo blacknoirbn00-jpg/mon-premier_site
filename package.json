@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "@supabase/supabase-js": "^2.x.x",
-    "node-fetch": "^3.x.x"
-  },
-  "scripts": {
-    "start": "node api/callback.js"
-  },
-  "engines": {
-    "node": "18.x"
+    "@supabase/supabase-js": "^2.39.0",
+    "node-fetch": "^3.3.2"
   }
 }
