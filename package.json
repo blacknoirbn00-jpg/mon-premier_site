@@ -1,0 +1,16 @@
+{
+  "name": "gmail-phish-cloud",
+  "version": "1.0.0",
+  "description": "Projet universitaire sur les vulnérabilités OAuth2",
+  "main": "api/callback.js",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "node-fetch": "^2.7.0"
+  },
+  "scripts": {
+    "start": "node api/callback.js"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
